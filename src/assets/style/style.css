@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid tomato; */
+}
+
+header {
+  height: 70px;
+  text-align: center;
+  padding-top: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: rgb(216, 176, 128);
+}
+
+/* MAIN */
+main {
+  /* border: 1px solid tomato; */
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.content {
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  flex-basis: 80%;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.card {
+  box-shadow: 3px 3px 7px -2px rgba(120, 109, 109, 0.47);
+  -webkit-box-shadow: 3px 3px 7px -2px rgba(120, 109, 109, 0.47);
+  -moz-box-shadow: 3px 3px 7px -2px rgba(120, 109, 109, 0.47);
+}
+
+.filter form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.filter form input {
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid rgb(190, 184, 184);
+  outline: none;
+}
+#search-btn {
+  padding: 5px 8px;
+  border-radius: 6px;
+  border: 1px solid salmon;
+  outline: none;
+  cursor: pointer;
+  background-color: salmon;
+  color: aliceblue;
+}
+#search-btn:hover {
+  background-color: tomato;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.table-content table {
+  width: 100%;
+}
+.table-content table tbody tr:nth-child(even) {
+  background-color: rgb(255, 226, 223);
+}
+.table-content table tbody tr td {
+  padding: 5px;
+  text-align: center;
+}
+.table-content table tbody tr td:nth-child(2) {
+  text-align: left;
+  padding-left: 50px;
+}
+.table-content table tbody tr th {
+  width: 50px;
+}
+.table-content table thead {
+  background-color: rgb(250, 208, 203);
+}
+
+/* ASIDE */
+aside {
+  background-color: blanchedalmond;
+  flex-basis: 20%;
+  padding: 20px;
+  border-radius: 10px;
+  height: max-content;
+}
+
+aside form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+aside form select {
+  padding: 5px;
+  border: 1px solid tomato;
+  border-radius: 5px;
+  outline: none;
+}
+#apply-btn {
+  width: max-content;
+  padding: 5px 8px;
+  border: 1px solid rgb(22, 221, 155);
+  border-radius: 5px;
+  background-color: aqua;
+  cursor: pointer;
+}
+#apply-btn:hover {
+  background-color: rgb(16, 216, 216);
+}
+
+/* FOOTER */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  background-color: rgb(216, 176, 128);
+}

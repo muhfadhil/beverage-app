@@ -27,14 +27,15 @@ header h1 {
 
 /* MAIN */
 main {
-  display: flex;
-  gap: 20px;
   padding: 20px;
 }
 
 .content {
+  width: 100%;
   background-color: blanchedalmond;
-  flex-basis: 80%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
   padding: 20px;
   border-radius: 8px;
 }
@@ -43,6 +44,32 @@ main {
   box-shadow: 3px 3px 7px -2px rgba(120, 109, 109, 0.47);
   -webkit-box-shadow: 3px 3px 7px -2px rgba(120, 109, 109, 0.47);
   -moz-box-shadow: 3px 3px 7px -2px rgba(120, 109, 109, 0.47);
+}
+
+.filter form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.filter form input {
+  padding: 9px;
+  border-radius: 10px;
+  border: 1px solid rgb(190, 184, 184);
+  font-size: 1em;
+  outline: none;
+}
+#search-btn {
+  padding: 5px 8px;
+  border-radius: 10px;
+  border: 1px solid salmon;
+  outline: none;
+  cursor: pointer;
+  background-color: salmon;
+  font-size: 1em;
+  color: aliceblue;
+}
+#search-btn:hover {
+  background-color: tomato;
 }
 
 h2 {
@@ -70,43 +97,6 @@ h2 {
 .table-content table thead {
   background-color: rgb(250, 208, 203);
   height: 30px;
-}
-
-/* ASIDE */
-aside {
-  background-color: blanchedalmond;
-  flex-basis: 20%;
-  padding: 20px;
-  border-radius: 10px;
-  height: max-content;
-}
-
-aside form {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-aside form select {
-  padding: 5px;
-  border: 1px solid tomato;
-  border-radius: 5px;
-  outline: none;
-}
-#apply-btn {
-  width: max-content;
-  padding: 5px 8px;
-  border: 1px solid salmon;
-  border-radius: 5px;
-  color: aliceblue;
-  background-color: rgb(252, 121, 106);
-  cursor: pointer;
-}
-#apply-btn:hover {
-  background-color: rgb(241, 93, 77);
-}
-#apply-btn:disabled {
-  background-color: rgb(238, 149, 139);
-  cursor: default;
 }
 
 /* FOOTER */

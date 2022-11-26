@@ -2,6 +2,7 @@
 
 require "./handlers/function.php";
 
+
 // init page
 $table = 'frappuccino';
 $name = $names[$table];
@@ -10,7 +11,6 @@ if (isset($_POST["apply"])) {
   $table = $_POST["table"];
   $name = $names[$table];
 }
-
 $beverages = query("SELECT * FROM {$table}");
 ?>
 
@@ -33,17 +33,10 @@ $beverages = query("SELECT * FROM {$table}");
 
   <main>
     <article class="content card">
-      <section class="filter">
-        <form action="" method="POST">
-          <input type="text" name="name-search" placeholder="beverage name" />
-          <input type="number" name="min-price" placeholder="minimum price" />
-          <input type="number" name="max-price" placeholder="maximum price" />
-          <button type="submit" name="search" id="search-btn">Search</button>
-        </form>
-      </section>
 
       <section class="table-content">
         <h2><?= $name ?></h2>
+        <a href="./components/detail.php?table=<?= $table ?>">detail</a>
         <table border="0" cellspacing="0">
           <thead>
             <th>No.</th>
